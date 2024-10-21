@@ -7,7 +7,7 @@
 function counter(list) {
   let boomerangs = 0;
 
-  for (let i = 0; i < list.length; i++) {
+  for (let i = 0; i < list.length - 1; i++) {
     const boomerang = list.slice(i, i + 3);
     if (boomerang[0] === boomerang[2] && boomerang[0] !== boomerang[1]) {
       boomerangs++;
